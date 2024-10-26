@@ -1,0 +1,143 @@
+/* font family start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* font family end */
+.container{
+    /* border: 1px solid; */
+}
+
+/* common css */
+:root{
+    --lato: "Lato", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --text: #8e8e8e;
+    --h1: #333333;
+}
+body{
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text);
+}
+.c_h1,.c_h2,.c_h3{
+    font-family: var(--lato);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--h1);
+}
+/* common end */
+
+/* navbar start */
+.c_header{
+    padding: 15px 0;
+    /* border: 1px solid black; */
+}
+.c_navbar{}
+.logo{
+   font-family: var(--lato);
+   font-size: 25px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: var(--h1);
+}
+.menu{}
+.menu ul li a{
+    font-family: var(--lato);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--text) !important;
+    padding: 0 15px !important;
+    border: none;
+    outline: none;
+}
+.menu ul li:hover a{
+    color: black !important;
+}
+.btn_search{
+    padding: 0 0 0 5px;
+    font-size: 20px;
+    border: none;
+    color: var(--text);
+}
+.btn_search:hover i{
+    color: black;
+}
+.search::after{
+    display: none;
+}
+.btn_dropdown{
+    width: 400px;
+    border: none;
+}
+.btn_dropdown[data-bs-popper] {
+    top: 40px;
+    left: -335px;
+}
+.search_btn{
+    background: transparent;
+    font-size: 25px;
+}
+
+/* navbar end */
+
+/* banner start */
+.banner{
+    /* padding: 120px 0; */
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slider{
+    padding: 140px 0;
+    color: white;
+}
+.c_h1{
+    padding-bottom: 35px;
+    color: white;
+    text-transform: capitalize;
+}
+.p_text{
+    line-height: 30px;
+}
+.cm_btn{
+    margin-top: 45px;
+    padding: 16px 30px;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+}
+.cm_btn:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: var(--h1);
+}
+.cm_btn span{
+    margin-left: 16px;
+}
+
+.s_btn {
+    background-color: transparent;
+    color: var(--h1);
+    font-family: var(--lato);
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.3s;
+}
+.s_btn:hover{
+    color: black;
+}
+.bt_icon{
+    display: inline-block;
+}
+.bt_icon span{
+    color: var(--h1);
+}
+/* banner end */
